@@ -63,4 +63,4 @@ go build -o mihop .
 
 ## License
 
-MIT
+[MIT](LICENSE.txt)
