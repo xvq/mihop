@@ -1,0 +1,23 @@
+# Git
+.git
+.gitignore
+
+# 编译产物（镜像内会重新构建）
+*.exe
+mihop
+web/dist
+web/node_modules
+
+# 本地数据目录
+.mihop
+data
+
+# 文档
+README.md
+docs/
+
+# 开发工具
+.idea
+.vscode
+*.log
+.claude

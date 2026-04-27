@@ -1,0 +1,20 @@
+# 编译产物
+*.exe
+mihop
+web/dist/
+
+# 前端依赖
+web/node_modules/
+
+# 本地数据目录
+.mihop/
+data/
+
+# Mihop 配置（含密码）
+mihop-config.json
+
+# 开发工具
+.idea/
+.vscode/
+*.log
+.claude/
