@@ -49,6 +49,21 @@ go build -o mihop .
 ./mihop -c /path/to/data
 ```
 
+## Docker
+
+```bash
+docker run -d \
+  --name mihop \
+  --network host \
+  -v /your/data:/data \
+  xvqq/mihop:latest
+```
+
+- `--network host` 让容器直接使用宿主机网络，本地监听和隧道端口无需逐一映射
+- `/your/data` 替换为你实际的数据目录，配置文件会持久化在这里
+- 面板默认访问地址：`http://localhost:8080`
+- Docker 镜像内已内置 mihomo，在**设置**页面直接填写路径 `/usr/local/bin/mihomo` 即可
+
 ## 数据目录结构
 
 ```
